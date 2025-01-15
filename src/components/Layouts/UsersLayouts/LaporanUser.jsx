@@ -11,7 +11,7 @@ const LaporanUser = () => {
     <div className="h-auto relative px-8 pt-[70px]">
       <div className="max-w-7xl mx-auto py-6">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">Laporan Akhir Magang</h1>
+          <h1 className="text-2xl font-bold">Laporan Akhir Magang</h1>
           <button
             onClick={() => setIsUploadOpen(true)}
             className="bg-blue-600 text-white px-6 py-2 rounded-lg inline-flex items-center hover:bg-blue-700"
