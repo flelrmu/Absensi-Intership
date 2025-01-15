@@ -61,8 +61,8 @@ function DashboardGrafik() {
                 fill="none"
                 stroke="#10B981"
                 strokeWidth="3"
-                strokeDasharray="100, 100"
-                className="animate-dash"
+                strokeDasharray="75, 100"
+                className="animate-dash-green"
               />
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -70,8 +70,7 @@ function DashboardGrafik() {
                 stroke="#F59E0B"
                 strokeWidth="3"
                 strokeDasharray="15, 100"
-                strokeDashoffset="-75"
-                className="animate-dash"
+                className="animate-dash-amber"
               />
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -79,8 +78,7 @@ function DashboardGrafik() {
                 stroke="#EF4444"
                 strokeWidth="3"
                 strokeDasharray="10, 100"
-                strokeDashoffset="-90"
-                className="animate-dash"
+                className="animate-dash-red"
               />
             </svg>
           </ResponsiveContainer>

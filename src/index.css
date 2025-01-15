@@ -17,16 +17,43 @@
     scrollbar-width: none; 
   }
 
-  @keyframes dash {
+  @keyframes dash-green {
     from {
-      stroke-dashoffset: 100;
+      stroke-dashoffset: 75; /* Nilai awal harus sesuai dengan strokeDasharray */
     }
     to {
       stroke-dashoffset: 0;
     }
   }
   
-  .animate-dash {
-    animation: dash 2s ease-in-out forwards;
+  @keyframes dash-amber {
+    from {
+      stroke-dashoffset: 90; /* Sesuaikan dengan kebutuhan */
+    }
+    to {
+      stroke-dashoffset: -75;
+    }
   }
+  
+  @keyframes dash-red {
+    from {
+      stroke-dashoffset: 100;
+    }
+    to {
+      stroke-dashoffset: -90;
+    }
+  }
+  
+  .animate-dash-green {
+    animation: dash-green 2s ease-in-out forwards;
+  }
+  
+  .animate-dash-amber {
+    animation: dash-amber 2s ease-in-out forwards;
+  }
+  
+  .animate-dash-red {
+    animation: dash-red 2s ease-in-out forwards;
+  }
+  
 }
