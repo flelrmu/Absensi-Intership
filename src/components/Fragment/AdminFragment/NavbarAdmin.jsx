@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavAdmin from "../Elements/Items/NavAdmin";
+import NavAdmin from "../../Elements/Items/NavAdmin";
 import { UserCircle, LogOut, ChevronDown } from "lucide-react";
 
 const NavbarAdmin = (props) => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CheckCircle, Clock, XCircle } from "lucide-react";
-import StatsCard from "../../Fragment/StatsCard";
-import PermissionModal from "../../Fragment/Permission";
+import StatsCard from "../../Fragment/UserFragment/StatsCard";
+import PermissionModal from "../../Fragment/UserFragment/Permission";
 
 const AbsensiUser = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

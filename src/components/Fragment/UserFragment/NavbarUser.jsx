@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { UserCircle, LogOut, ChevronDown } from "lucide-react";
-import NavUser from "../Elements/Items/NavUser";
+import NavUser from "../../Elements/Items/NavUser";
 
 const NavbarUser = (props) => {
   const { type } = props;

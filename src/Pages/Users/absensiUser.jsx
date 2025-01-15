@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarUser from "../../components/Fragment/NavbarUser";
+import NavbarUser from "../../components/Fragment/UserFragment/NavbarUser";
 import AbsensiUser from "../../components/Layouts/UsersLayouts/AbsensiUser";
 
 function AbsensiUserPage() {

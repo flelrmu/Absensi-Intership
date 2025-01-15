@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ArrowUpDown, Upload } from "lucide-react";
-import UploadLaporan from "../../Fragment/UploadLaporan";
+import UploadLaporan from "../../Fragment/UserFragment/UploadLaporan";
 
 const LaporanUser = () => {
   const [isUploadOpen, setIsUploadOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ArrowUpDown, Clock, CheckCircle } from "lucide-react";
-import LogbookStatsCard from "../../Fragment/LogbookStatsCard";
-import ActivityModal from "../../Fragment/Activity";
+import LogbookStatsCard from "../../Fragment/UserFragment/LogbookStatsCard";
+import ActivityModal from "../../Fragment/UserFragment/Activity";
 
 const LogbookUser = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
