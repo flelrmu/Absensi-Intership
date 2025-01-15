@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar } from "lucide-react";
+import SearchButton from "../../Elements/Button/SearchButton";
 
 function FilterAbsensi() {
   return (
@@ -33,9 +34,7 @@ function FilterAbsensi() {
               placeholder="Cari nama atau NIM"
               className="flex-1 p-2 border rounded-lg"
             />
-            <button className="bg-gray-400 text-white px-8 py-2 rounded-lg">
-              Cari
-            </button>
+            <SearchButton>Cari</SearchButton>
           </div>
         </div>
       </div>

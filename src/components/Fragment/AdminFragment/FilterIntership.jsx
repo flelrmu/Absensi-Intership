@@ -1,5 +1,6 @@
 import React from "react";
-import { Calendar} from "lucide-react";
+import { Calendar } from "lucide-react";
+import SearchButton from "../../Elements/Button/SearchButton";
 
 function FilterIntership() {
   return (
@@ -31,11 +32,14 @@ function FilterIntership() {
       </div>
       <div>
         <label className="block text-gray-600 mb-2">Pencarian</label>
-        <input
-          type="text"
-          placeholder="Cari nama atau NIM"
-          className="w-full border rounded-md p-2"
-        />
+        <div className="flex gap-2">
+          <input
+            type="text"
+            placeholder="Cari nama atau NIM"
+            className="flex-1 p-2 border rounded-lg"
+          />
+          <SearchButton>Cari</SearchButton>
+        </div>
       </div>
     </div>
   );

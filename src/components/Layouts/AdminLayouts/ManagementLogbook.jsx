@@ -12,11 +12,8 @@ function ManagementLogbook() {
           <h1 className="text-2xl font-bold">Manajemen Logbook</h1>
           <GreenButton>Export Logbook</GreenButton>
         </div>
-
         <LogbookCard />
-
         <FilterLogbook />
-
         <DataLogbook />
       </div>
     </div>
