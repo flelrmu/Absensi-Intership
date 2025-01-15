@@ -29,21 +29,21 @@ const NavbarAdmin = (props) => {
             >
               <div className="flex items-center gap-3 px-3 py-2">
                 <div className="flex flex-col items-end">
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                  <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 duration-500">
                     Bro
                   </span>
-                  <span className="text-xs text-gray-500 group-hover:text-gray-700">
+                  <span className="text-xs text-gray-500 group-hover:text-gray-700 duration-500">
                     Internship
                   </span>
                 </div>
                 <img
                   src="/images/avatar.svg"
                   alt="Profile"
-                  className="h-9 w-9 rounded-full ring-2 ring-gray-100 group-hover:ring-gray-200"
+                  className="h-9 w-9 rounded-full ring-2 ring-gray-100 duration-500 group-hover:ring-red-200"
                 />
 
                 <ChevronDown
-                  className={`h-4 w-4 text-gray-500 transition-transform duration-200 ${
+                  className={`h-4 w-4 text-gray-500 transition-transform duration-500 ${
                     isDropdownOpen ? "transform rotate-180" : ""
                   }`}
                 />
@@ -53,7 +53,7 @@ const NavbarAdmin = (props) => {
             <div
               className={`
                         absolute right-0 top-full mt-1 w-60 rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5
-                        transform transition-all duration-200 ease-in-out
+                        transform transition-all duration-500 ease-in-out
                         ${
                           isDropdownOpen
                             ? "opacity-100 translate-y-0 visible"
@@ -68,7 +68,7 @@ const NavbarAdmin = (props) => {
 
                 <Link
                   to="/profile"
-                  className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-blue-50 duration-500 transition-colors"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-blue-50 text-blue-600">
@@ -89,7 +89,7 @@ const NavbarAdmin = (props) => {
                     handleLogout();
                     setIsDropdownOpen(false);
                   }}
-                  className="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-sm text-red-600 hover:bg-red-50 transition-colors"
+                  className="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-sm text-red-600 hover:bg-red-50 duration-500 transition-colors"
                 >
                   <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-red-50 text-red-600">
                     <LogOut className="h-5 w-5" />

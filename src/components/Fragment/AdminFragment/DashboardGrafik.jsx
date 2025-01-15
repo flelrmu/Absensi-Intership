@@ -54,14 +54,15 @@ function DashboardGrafik() {
       <div className="bg-white rounded-lg shadow p-6">
         <h3 className="text-lg font-medium mb-4">Status Logbook</h3>
         <div className="flex justify-center items-center h-64">
-          <div className="relative w-48 h-48">
+          <ResponsiveContainer width="80%" height="80%">
             <svg viewBox="0 0 36 36" className="w-full h-full">
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                 fill="none"
                 stroke="#10B981"
                 strokeWidth="3"
-                strokeDasharray="75, 100"
+                strokeDasharray="100, 100"
+                className="animate-dash"
               />
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -70,6 +71,7 @@ function DashboardGrafik() {
                 strokeWidth="3"
                 strokeDasharray="15, 100"
                 strokeDashoffset="-75"
+                className="animate-dash"
               />
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -78,9 +80,10 @@ function DashboardGrafik() {
                 strokeWidth="3"
                 strokeDasharray="10, 100"
                 strokeDashoffset="-90"
+                className="animate-dash"
               />
             </svg>
-          </div>
+          </ResponsiveContainer>
         </div>
         <div className="flex justify-center space-x-6">
           <div className="flex items-center">

@@ -3,7 +3,7 @@ import Input from "../Elements/Items/Input";
 import { HiOutlineMail } from "react-icons/hi";
 import { LuLockKeyhole } from "react-icons/lu";
 import WhiteButton from "../Elements/Button/WhiteButton";
-import BlackButton from "../Elements/Button/BlackButton";
+import Button from "../Elements/Button/Button";
 import { Link } from "react-router-dom";
 
 function FormLogin() {
@@ -30,11 +30,11 @@ function FormLogin() {
 
       <div className="flex-1 justify-between text-center">
         <Link to="/dashboard">
-          <BlackButton variant="w-full bg-black mb-4">Masuk</BlackButton>
+          <Button variant="w-full bg-black mb-4 hover:bg-gray-800">Masuk</Button>
         </Link>
-        <WhiteButton variant="w-full">
-          <Link to="/scan">Scan QR Code</Link>
-        </WhiteButton>
+        <Link to="/scan">
+          <WhiteButton variant="w-full">Scan QR Code</WhiteButton>
+        </Link>
       </div>
     </form>
   );

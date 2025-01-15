@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
-import BlackButton from "../Elements/Button/BlackButton";
+import Button from "../Elements/Button/Button";
 
 function FormRegister() {
   const [formData, setFormData] = useState({
@@ -182,7 +182,7 @@ function FormRegister() {
         <Link to="/login" className="text-sm text-gray-600 hover:underline">
           Sudah ada akun?
         </Link>
-        <BlackButton variant="bg-black">Daftar</BlackButton>
+        <Button variant="bg-black hover:bg-gray-800">Daftar</Button>
       </div>
     </form>
   );

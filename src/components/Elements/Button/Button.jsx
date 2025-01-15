@@ -1,6 +1,6 @@
 import React from "react";
 
-function BlackButton(props) {
+function Button(props) {
   const {
     children,
     variant = "",
@@ -10,7 +10,7 @@ function BlackButton(props) {
   return (
     <button
       type={type}
-      className={`flex px-4 ${variant} py-2 text-white justify-center rounded-md hover:bg-gray-800`}
+      className={`flex px-4 ${variant} py-2 text-white justify-center rounded-md duration-500`}
       onClick={() => onClick()}
     >
       {children}
@@ -18,4 +18,4 @@ function BlackButton(props) {
   );
 }
 
-export default BlackButton;
+export default Button;
