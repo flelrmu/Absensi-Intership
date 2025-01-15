@@ -7,8 +7,8 @@ import DataLaporan from "../../Fragment/AdminFragment/DataLaporan";
 function ManagementLaporan() {
 
   return (
-    <div className="h-auto relative pt-[70px]">
-      <div className="mx-auto px-8 py-6">
+    <div className="h-auto relative px-8 pt-[70px]">
+      <div className="max-w-7xl mx-auto py-6">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl font-bold">Manajemen Laporan Akhir</h1>
           <GreenButton>Export Data</GreenButton>

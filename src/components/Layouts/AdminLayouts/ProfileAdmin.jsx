@@ -23,8 +23,8 @@ const ProfileAdmin = () => {
   };
 
   return (
-    <div className="h-auto relative pt-[70px]">
-      <div className="mx-auto px-8 py-6">
+    <div className="h-auto relative px-8 pt-[70px]">
+      <div className="mmax-w-7xl x-auto py-6">
         <h1 className="text-2xl font-bold mb-8">Profile Settings</h1>
 
         <div className="bg-white rounded-lg shadow p-8">

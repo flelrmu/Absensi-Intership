@@ -34,8 +34,8 @@ const ProfileUser = () => {
   };
 
   return (
-    <div className="h-auto relative pt-[70px]">
-      <div className="mx-auto px-8 py-6">
+    <div className="h-auto relative px-8 pt-[70px]">
+      <div className="max-w-7xl mx-auto py-6">
         <h1 className="text-3xl font-bold mb-8">Profile Settings</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -29,9 +29,9 @@ function FormLogin() {
       </div>
 
       <div className="flex-1 justify-between text-center">
-        <BlackButton variant="w-full bg-black mb-4">
-          <Link to="/dashboard">Masuk</Link>
-        </BlackButton>
+        <Link to="/dashboard">
+          <BlackButton variant="w-full bg-black mb-4">Masuk</BlackButton>
+        </Link>
         <WhiteButton variant="w-full">
           <Link to="/scan">Scan QR Code</Link>
         </WhiteButton>

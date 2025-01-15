@@ -5,8 +5,8 @@ import AktifitasTerbaru from "../../Fragment/AdminFragment/AktifitasTerbaru";
 
 const DashboardAdmin = () => {
   return (
-    <div className="h-auto relative pt-[70px]">
-      <div className="mx-auto px-8 py-6">
+    <div className="h-auto relative px-8 pt-[70px]">
+      <div className="max-w-7xl mx-auto py-6">
         <DashboardCard />
         <DashboardGrafik />
         <AktifitasTerbaru />
