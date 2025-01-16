@@ -19,7 +19,7 @@ function NavAdmin() {
       },
       {
         id: 2,
-        name: "Intership",
+        name: "Internship",
         link: "/internship",
       },
       {
@@ -39,7 +39,7 @@ function NavAdmin() {
       }
     ];
   return (
-    <div className="ml-6 h-full flex space-x-8">
+    <div className="md:ml-6 h-full flex flex-col md:flex-row space-x-8">
       {item.map((item) => (
         <div
           key={item.id}

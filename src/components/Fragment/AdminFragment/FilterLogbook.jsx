@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Calendar } from "lucide-react";
 import SearchButton from "../../Elements/Button/SearchButton";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function FilterLogbook() {
+  const [startDate, setStartDate] = useState(null);
   return (
     <div className="bg-white p-6 rounded-lg shadow mb-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <label className="block text-gray-600 mb-2">Tanggal</label>
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="mm/dd/yyyy"
-              className="w-full p-2 border rounded-lg pr-10"
+          <div className="flex">
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              placeholderText="------ ----"
+              className="w-full border rounded-l-md p-2 pr-36"
             />
-            <Calendar
-              className="absolute right-3 top-2.5 text-gray-400"
-              size={20}
-            />
+            <button
+              className="bg-gray-100 px-3 border-y border-r rounded-r-md"
+              onClick={() =>
+                document
+                  .querySelector(".react-datepicker__input-container input")
+                  .focus()
+              }
+            >
+              <Calendar size={20} className="text-gray-500" />
+            </button>
           </div>
         </div>
         <div>

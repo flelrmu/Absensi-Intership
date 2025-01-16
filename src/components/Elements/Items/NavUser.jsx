@@ -34,13 +34,13 @@ function NavUser() {
       },
     ];
   return (
-    <div className="ml-6 h-full flex space-x-8">
+    <div className="md:ml-6 h-full flex flex-col md:flex-row space-x-8">
       {item.map((item) => (
         <div
           key={item.id}
           className={`${location.pathname === item.link || active === item.id
             ? "text-red-500 border-b-2 border-red-500"
-            : "text-gray-500 hover:text-gray-700"} px-3 pt-5 cursor-pointer`}
+            : "text-gray-500 hover:text-gray-700 duration-500"} px-3 pt-5 cursor-pointer`}
           onClick={() => handleClick(item.id, item.link)}
         >
           {item.name}

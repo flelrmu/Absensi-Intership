@@ -1,12 +1,17 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import NavAdmin from "../../Elements/Items/NavAdmin";
-import { UserCircle, LogOut, ChevronDown } from "lucide-react";
+import { UserCircle, LogOut, ChevronDown, AlignJustify } from "lucide-react";
 
 const NavbarAdmin = (props) => {
   const { type } = props;
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <nav className="bg-white z-50 fixed px-8 shadow-md w-full">
@@ -16,13 +21,13 @@ const NavbarAdmin = (props) => {
             <img
               src="/images/cemenLogo.svg"
               alt="Logo"
-              className="h-8 w-auto"
+              className="h-11 w-auto"
             />
-            <div className="ml-6 h-full flex space-x-8">
+            <div className="ml-6 h-full md:flex space-x-8 hidden">
               <Navigation type={type} />
             </div>
           </div>
-          <div className="flex items-center relative" ref={dropdownRef}>
+          <div className="md:flex items-center hidden relative" ref={dropdownRef}>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="flex items-center group hover:bg-gray-50 rounded-lg transition-all duration-150 ease-in-out"
@@ -51,15 +56,11 @@ const NavbarAdmin = (props) => {
             </button>
 
             <div
-              className={`
-                        absolute right-0 top-full mt-1 w-60 rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5
-                        transform transition-all duration-500 ease-in-out
-                        ${
-                          isDropdownOpen
-                            ? "opacity-100 translate-y-0 visible"
-                            : "opacity-0 -translate-y-2 invisible"
-                        }
-                      `}
+              className={`absolute right-0 top-full mt-1 w-60 rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 transform transition-all duration-500 ease-in-out ${
+                isDropdownOpen
+                  ? "opacity-100 translate-y-0 visible"
+                  : "opacity-0 -translate-y-2 invisible"
+              }`}
             >
               <div className="p-2">
                 <div className="text-xs font-medium text-gray-400 px-3 py-2">
@@ -102,6 +103,23 @@ const NavbarAdmin = (props) => {
                   </div>
                 </button>
               </div>
+            </div>
+          </div>
+          <div className="md:hidden flex justify-between items-center w-full">
+            <div className="bg-white shadow ml-auto px-[12px] py-[12px] rounded-md">
+              <div>
+                <AlignJustify
+                  className="text-3xl cursor-pointer text-gray-500"
+                  onClick={handleToggle}
+                />
+              </div>
+            </div>
+            <div
+              className={`absolute shadow text-end justify-end items-end cursor-pointer mr-[32px] rounded-lg top-20 right-0 bg-white z-50 flex flex-col px-5 pb-5 transition-all duration-500 ease-in-out ${
+                toggle ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"
+              }`}
+            >
+              <Navigation type={type} />
             </div>
           </div>
         </div>
