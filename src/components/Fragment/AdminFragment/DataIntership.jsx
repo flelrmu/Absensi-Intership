@@ -32,20 +32,20 @@ function DataIntership() {
                 </div>
               </div>
             </td>
-            <td className="p-4">13 Jan 2024</td>
-            <td className="p-4">08:00:23</td>
-            <td className="p-4">17:00:23</td>
+            <td className="p-4">22111523090</td>
+            <td className="p-4">Universitas Andalas</td>
+            <td className="p-4">6 Jan 2025 - 20 Feb 2025</td>
             <td className="p-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
                 Aktif
               </span>
             </td>
             <td className="p-4">
-              <div className="flex space-x-2">
-                <button className="text-blue-500">
+              <div className="flex space-x-4">
+                <button className="text-blue-500 hover:bg-blue-50 p-1">
                   <Edit2 size={20} />
                 </button>
-                <button className="text-red-500">
+                <button className="text-red-500 hover:bg-red-50 p-1">
                   <Trash2 size={20} />
                 </button>
               </div>

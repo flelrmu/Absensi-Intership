@@ -1,7 +1,10 @@
-import React from "react";
-import { Eye, SquarePen, Check, FolderDown } from "lucide-react";
+import React, { useState } from "react";
+import { X, Check, FolderDown } from "lucide-react";
+import Reject from "./Reject";
 
 function DataLaporan() {
+  const [isRejectOpen, setIsRejectOpen] = useState(false);
+
   const attendanceData = [
     {
       name: "Rehan Ramadhan",
@@ -50,14 +53,14 @@ function DataLaporan() {
               </td>
               <td className="p-4">
                 <div className="flex gap-2">
-                  <button className="p-1 text-green-600 hover:bg-blue-50 rounded">
+                  <button className="p-1 text-green-600 hover:bg-green-50 rounded">
                     <Check size={20} />
                   </button>
-                  <button className="p-1 text-yellow-600 hover:bg-red-50 rounded">
-                    <SquarePen size={20} />
-                  </button>
-                  <button className="p-1 text-blue-600 hover:bg-red-50 rounded">
-                    <Eye size={20} />
+                  <button
+                    onClick={() => setIsRejectOpen(true)}
+                    className="p-1 text-red-600 hover:bg-red-50 rounded"
+                  >
+                    <X size={20} />
                   </button>
                 </div>
               </td>
@@ -82,6 +85,7 @@ function DataLaporan() {
           </div>
         </div>
       </div>
+      <Reject isOpen={isRejectOpen} onClose={() => setIsRejectOpen(false)} />
     </div>
   );
 }

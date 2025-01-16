@@ -15,7 +15,7 @@ function FilterLogbook() {
             <DatePicker
               selected={startDate}
               onChange={(date) => setStartDate(date)}
-              placeholderText="------ ----"
+              placeholderText="mm/dd/yyyy"
               className="w-full border rounded-l-md p-2 pr-36"
             />
             <button

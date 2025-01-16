@@ -11,7 +11,6 @@ function Mahasiswa() {
         <div className="container mx-auto">
           <div className="flex justify-between items-center mb-8">
             <PageTitle>Manajemen Data Intership</PageTitle>
-            <BlueButton>Tambah Aktivitas</BlueButton>
           </div>
           <FilterIntership />
           <DataIntership />

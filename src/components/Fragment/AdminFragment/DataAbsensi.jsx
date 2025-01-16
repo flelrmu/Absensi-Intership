@@ -21,7 +21,6 @@ function DataAbsensi() {
             <th className="text-left p-4">Waktu Masuk</th>
             <th className="text-left p-4">Waktu Keluar</th>
             <th className="text-left p-4">Status</th>
-            <th className="text-left p-4">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -43,16 +42,6 @@ function DataAbsensi() {
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
                   {record.status}
                 </span>
-              </td>
-              <td className="p-4">
-                <div className="flex gap-2">
-                  <button className="p-1 text-blue-600 hover:bg-blue-50 rounded">
-                    <Info size={20} />
-                  </button>
-                  <button className="p-1 text-red-600 hover:bg-red-50 rounded">
-                    <X size={20} />
-                  </button>
-                </div>
               </td>
             </tr>
           ))}

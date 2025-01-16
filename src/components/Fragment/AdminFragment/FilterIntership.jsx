@@ -9,7 +9,7 @@ function FilterIntership() {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div>
           <label className="block text-gray-600 mb-2">Status</label>
           <select className="w-full border rounded-md p-2">
