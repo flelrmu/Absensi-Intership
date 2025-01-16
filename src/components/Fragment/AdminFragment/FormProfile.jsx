@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Camera } from "lucide-react";
+import Button from "../../Elements/Button/Button";
 
 function FormProfile() {
   const [profileData, setProfileData] = useState({
@@ -70,13 +71,10 @@ function FormProfile() {
                 />
               </div>
 
-              <div className="text-right">
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                >
+              <div className="text-right flex justify-end">
+                <Button variant="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
                   Simpan Perubahan
-                </button>
+                </Button>
               </div>
             </form>
           </div>
@@ -133,13 +131,10 @@ function FormProfile() {
               />
             </div>
 
-            <div className="text-right">
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-              >
+            <div className="justify-end flex">
+              <Button variant="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
                 Update Password
-              </button>
+              </Button>
             </div>
           </form>
         </div>

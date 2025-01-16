@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PermissionModal from "../../Fragment/UserFragment/Permission";
 import RiwayatAbsensi from "../../Fragment/UserFragment/RiwayatAbsensi";
 import AbsensiCard from "../../Fragment/UserFragment/AbsensiCard";
+import PageTitle from "../../Elements/Items/PageTitle";
 
 const AbsensiUser = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +24,7 @@ const AbsensiUser = () => {
     <div className="h-auto relative px-8 pt-[70px]">
       <div className="max-w-7xl mx-auto py-6">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Absensi</h1>
+          <PageTitle>Absensi</PageTitle>
           <div className="space-x-4">
             <button
               onClick={handleOpenModal}

@@ -3,6 +3,7 @@ import { ArrowUpDown } from "lucide-react";
 import ActivityModal from "../../Fragment/UserFragment/Activity";
 import LogbookCard from "../../Fragment/UserFragment/LogbookCard";
 import LogbookData from "../../Fragment/UserFragment/LogbookData";
+import PageTitle from "../../Elements/Items/PageTitle";
 
 const LogbookUser = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,7 +12,7 @@ const LogbookUser = () => {
     <div className="h-auto relative px-8 pt-[70px]">
       <div className="max-w-7xl mx-auto py-6">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Logbook Aktivitas</h1>
+          <PageTitle>Logbook Aktivitas</PageTitle>
           <div className="space-x-4">
             <button
               onClick={() => setIsModalOpen(true)}

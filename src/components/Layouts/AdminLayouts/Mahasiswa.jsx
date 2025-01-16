@@ -2,6 +2,7 @@ import React from "react";
 import FilterIntership from "../../Fragment/AdminFragment/FilterIntership";
 import DataIntership from "../../Fragment/AdminFragment/DataIntership";
 import BlueButton from "../../Elements/Button/BlueButton";
+import PageTitle from "../../Elements/Items/PageTitle";
 
 function Mahasiswa() {
   return (
@@ -9,7 +10,7 @@ function Mahasiswa() {
       <div className="max-w-7xl mx-auto py-8">
         <div className="container mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-2xl font-bold">Manajemen Data Intership</h1>
+            <PageTitle>Manajemen Data Intership</PageTitle>
             <BlueButton>Tambah Aktivitas</BlueButton>
           </div>
           <FilterIntership />

@@ -19,7 +19,7 @@ const weeklyData = [
 
 function DashboardGrafik() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
       <div className="bg-white rounded-lg shadow p-6">
         <h3 className="text-lg font-medium mb-4">Grafik Kehadiran Mingguan</h3>
         <div className="h-64">
