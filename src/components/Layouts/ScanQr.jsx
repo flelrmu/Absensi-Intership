@@ -17,8 +17,7 @@ function ScanQr() {
     console.error(err);
   };
 
-  // Make the preview size consistent
-  const scannerSize = 280; // Slightly smaller than container to account for borders
+  const scannerSize = 280;
   
   const previewStyle = {
     height: scannerSize,
@@ -27,7 +26,7 @@ function ScanQr() {
   };
 
   const containerStyle = {
-    height: scannerSize + 40, // Add padding for borders
+    height: scannerSize + 40,
     width: scannerSize + 40,
   };
 
@@ -43,13 +42,11 @@ function ScanQr() {
               </h2>
 
               <div className="relative mb-8 flex items-center justify-center">
-                {/* Scanner container */}
                 <div 
                   className="relative"
                   style={containerStyle}
                 >
-                  {/* QR Scanner */}
-                  <div className="absolute inset-5"> {/* Use inset-5 for 20px padding on all sides */}
+                  <div className="absolute inset-5">
                     <QrScanner
                       delay={300}
                       style={previewStyle}
@@ -59,27 +56,22 @@ function ScanQr() {
                     />
                   </div>
 
-                  {/* Corner Markers */}
                   <div className="absolute inset-0">
-                    {/* Top-left corner */}
                     <div className="absolute top-0 left-0 w-10 h-10">
                       <div className="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
                       <div className="absolute top-0 left-0 w-2 h-full bg-red-500"></div>
                     </div>
 
-                    {/* Top-right corner */}
                     <div className="absolute top-0 right-0 w-10 h-10">
                       <div className="absolute top-0 right-0 w-full h-2 bg-red-500"></div>
                       <div className="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
                     </div>
 
-                    {/* Bottom-left corner */}
                     <div className="absolute bottom-0 left-0 w-10 h-10">
                       <div className="absolute bottom-0 left-0 w-full h-2 bg-red-500"></div>
                       <div className="absolute bottom-0 left-0 w-2 h-full bg-red-500"></div>
                     </div>
 
-                    {/* Bottom-right corner */}
                     <div className="absolute bottom-0 right-0 w-10 h-10">
                       <div className="absolute bottom-0 right-0 w-full h-2 bg-red-500"></div>
                       <div className="absolute bottom-0 right-0 w-2 h-full bg-red-500"></div>

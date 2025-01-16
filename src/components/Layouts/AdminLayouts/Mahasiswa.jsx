@@ -1,7 +1,6 @@
 import React from "react";
 import FilterIntership from "../../Fragment/AdminFragment/FilterIntership";
 import DataIntership from "../../Fragment/AdminFragment/DataIntership";
-import BlueButton from "../../Elements/Button/BlueButton";
 import PageTitle from "../../Elements/Items/PageTitle";
 
 function Mahasiswa() {

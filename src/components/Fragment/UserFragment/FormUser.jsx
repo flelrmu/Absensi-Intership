@@ -35,7 +35,6 @@ function FormUser() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2 space-y-6">
-        {/* Personal Information Card */}
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-xl font-semibold mb-6">Informasi Pribadi</h2>
 
@@ -134,7 +133,6 @@ function FormUser() {
           </div>
         </div>
 
-        {/* Password Change Card */}
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="space-y-4">
             <div>
@@ -183,7 +181,6 @@ function FormUser() {
         </div>
       </div>
 
-      {/* Right Side Information */}
       <div className="space-y-6">
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-xl font-semibold mb-4">Informasi Pribadi</h2>

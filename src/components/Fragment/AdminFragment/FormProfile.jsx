@@ -13,7 +13,6 @@ function FormProfile() {
 
   const handleProfileUpdate = (e) => {
     e.preventDefault();
-    // Handle profile update logic here
     console.log("Profile updated:", profileData);
   };
 
@@ -26,12 +25,10 @@ function FormProfile() {
   return (
     <div className="bg-white rounded-lg shadow p-8">
       <div className="max-w-3xl">
-        {/* Personal Information Section */}
         <div className="mb-12">
           <h2 className="text-xl font-semibold mb-6">Informasi Pribadi</h2>
 
           <div className="flex items-start mb-8">
-            {/* Profile Image */}
             <div className="relative">
               <div className="w-32 h-32 rounded-full bg-pink-200 overflow-hidden">
                 <img
@@ -80,7 +77,6 @@ function FormProfile() {
           </div>
         </div>
 
-        {/* Password Section */}
         <div>
           <h2 className="text-xl font-semibold mb-6">Ubah Password</h2>
           <form onSubmit={handlePasswordUpdate}>

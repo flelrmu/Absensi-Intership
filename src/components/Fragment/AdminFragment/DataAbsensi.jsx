@@ -1,5 +1,4 @@
 import React from "react";
-import { Info, X } from "lucide-react";
 
 function DataAbsensi() {
   const attendanceData = [
